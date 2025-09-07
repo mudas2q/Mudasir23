@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube</title>
+   
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 3%;
+            justify-content: space-between;
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: rgb(245, 245, 245); */
+            background: #f8f9fa;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+
+        .logo-sec>h1 a {
+            text-decoration: none;
+            color: black;
+            letter-spacing: -0.07em;
+            font-size: 1.8rem;
+        }
+
+        header>.navbar {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .navbar>li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .create-button>button {
+            padding: 0.5rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 1.2rem;
+            font-weight: 600;
+            /* background-color: rgba(2, 58, 163, 0.712); */
+            background: #fff;
+            color: #2d2e32;
+            box-shadow: 0 1px 4px black;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-sec {
+            display: flex;
+            gap: 0.2rem;
+            align-items: center;
+        }
+        .logo-sec>img{
+            height: 2.3em;
+            width: auto;
+        }
+        .left-slidebar{
+            width: fit-content;
+            padding: 0.8rem 0.2rem 0rem 0.7rem;
+            background: #f8f9fa;
+            box-shadow: 5px 0 5px -4px rgba(0,0,0,0.15);
+            color: #252525;
+        }
+        .left-slidebar > p{
+            padding: 0.5rem 1.9rem 0.5rem 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #202020;
+            font-size: 0.9rem;
+        }
+        .left-slidebar >h4{
+            padding: 0.9rem 0;
+            text-transform: uppercase;
+            font-size: 1rem;
+            text-decoration: underline;
+            margin-left: 0.5rem;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+
+        .left-slidebar p> img{
+            width: 1.7em;
+            height: auto;
+            margin-right: 0.9rem;
+        }
+
+        .create-button button >img{
+            width: 1.5em;
+            height: auto;
+            margin-right: 0.2rem;
+        }
+
+        #side-bar-paragraph{
+            background-color: rgb(236, 236, 236);
+            border-radius: 0.4rem;
+            font-weight: 600;
+        }
+        main{
+            display: flex;
+        }
+        video{
+            margin: 2rem 2rem;
+            border-radius: 15px;
+              box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* optional: nice shadow */
+            width: 350px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-sec">
+            <img src="images-icons/yt.svg" alt="">
+            <h1><a href="/">YouTube</a></h1>
+        </div>
+
+        <ul class="navbar">
+            <li><a href="/">Videos</a></li>
+            <li><a href="">Audios</a></li>
+            <li><a href="">Feedback</a></li>
+        </ul>
+
+        <div class="right">
+            <div class="create-button">
+                <button><img src="images-icons/ai-btn.svg" alt=""> Create</button>
+            </div>
+
+            <div class="user-image">
+                <img src="images-icons/user-icon.svg" alt="User-Icon Load Error" height="50">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="left-slidebar">
+            <p id="side-bar-paragraph"><img src="images-icons/home-icon.svg" alt="home" class="icon">Home</p>
+            <p><img src="images-icons/shorts-icon.svg"/>Shorts</p>
+            <p><img src="images-icons/subscription-icon.svg" alt="">Subscriptions</p>
+            <hr>
+            <h4>You</h4>
+            <p><img src="images-icons/history-icon.svg" alt=""> History</p>
+            <p><img src="images-icons/playlists-icon.svg" alt="">Playlists</p>
+            <p><img src="images-icons/clock-icon.svg" alt="">Whatch later</p>
+            <p><img src="images-icons/like-icon.svg" alt=""> Liked videos</p>
+            <p> <img src="images-icons/download-icon.svg" alt=""> Downloads</p>
+            <hr>
+            <h4>Explore</h4>
+            <p><img src="images-icons/music-icon.svg" alt=""> Music</p>
+            <p><img src="images-icons/gaming-icon.svg" alt=""> Gaming</p>
+            <p><img src="images-icons/news-icon.svg" alt=""> News</p>
+
+            <p><img src="images-icons/setting-icon.svg" alt=""> Settings</p>
+            <p><img src="images-icons/report-icon.svg" alt=""> Report</p>
+            <p><img src="images-icons/help-icon.svg" alt=""> Help</p>
+            <p><img src="images-icons/feedback-icon.svg" alt=""> Send Feedback</p>
+        </div>
+
+        <video src="videohai.mp4"
+poster="images-icons/piclumen-1757285155216.png"
+width="400" height="300"
+preload
+controls
+loop>
+<p>A video of a puppy playing in the snow</p>
+</video>
+    </main>
+</body>
+
+</html>
